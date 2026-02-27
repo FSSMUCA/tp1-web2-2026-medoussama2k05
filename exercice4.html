@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 4</title>
+</head>
+<body>
+
+<script>
+let prenom = prompt("Entrez votre prénom :");
+
+if (prenom !== null) {
+
+    let anneeNaissance = prompt("Entrez votre année de naissance :");
+
+    if (anneeNaissance !== null) {
+
+        let age = 2026 - Number(anneeNaissance);
+
+        alert("Bonjour " + prenom + ", vous avez " + age + " ans.");
+
+        let confirmation = confirm("Afficher dans la console ?");
+
+        if (confirmation) {
+            console.log("Prénom :", prenom);
+            console.log("Âge :", age);
+        }
+    }
+}
+</script>
+
+</body>
+</html>
