@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 5</title>
+</head>
+<body>
+
+<h1 id="titre">Ma présentation</h1>
+<p id="description"></p>
+<ul id="liste"></ul>
+
+<script>
+let prenom = "Oussama";
+let age = 21;
+let ville = "Marrakech";
+
+document.getElementById("description").textContent =
+`Je m'appelle ${prenom}, j'ai ${age} ans et j'habite à ${ville}.`;
+
+document.getElementById("liste").innerHTML =
+`
+<li>Développement Web</li>
+<li>JavaScript</li>
+<li>PHP</li>
+`;
+
+document.getElementById("titre").textContent =
+"Présentation dynamique JavaScript";
+</script>
+
+</body>
+</html>
