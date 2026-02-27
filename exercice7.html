@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercice 7</title>
+</head>
+<body>
+
+<h1>Calculatrice de cercle</h1>
+<p id="resultat"></p>
+
+<script>
+const PI = Math.PI;
+
+let rayon = prompt("Entrez le rayon :");
+
+if (rayon !== null) {
+
+    rayon = Number(rayon);
+
+    let aire = PI * rayon * rayon;
+    let perimetre = 2 * PI * rayon;
+
+    document.getElementById("resultat").innerHTML =
+    `
+    Rayon : ${rayon}<br>
+    Aire : ${aire.toFixed(2)}<br>
+    Périmètre : ${perimetre.toFixed(2)}
+    `;
+}
+</script>
+
+</body>
+</html>
